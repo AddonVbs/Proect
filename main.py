@@ -1,2 +1,2 @@
-print("Hello")
-a = int(input())
+import colorama
+print(f"Привет")
