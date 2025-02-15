@@ -19,7 +19,31 @@ def start(message):
 
 @bot.message_handler(content_types=['text'])
 def main(message):
-    bot.send_message(message.chat.id," ")
+    if message.text == "Помощь ☎":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        Mabtn2 = types.KeyboardButton("Зарегестрироватья🔑")
+        Mabtn3 = types.KeyboardButton("Ошибка ⚠")
+        markup.add(Mabtn2,Mabtn3)
+        bot.send_message(message.chat.id, "Чем могу помочь ?".format(message.from_user), reply_markup=markup)
+    if message.text == "Мой Акаунт💠":
+        
 
-#f
+
+
+
+
+
+
+
+
+# if message.text == "Ошибка ⚠":
+#     bot.send_message(message.chat.id, "Напишите вашу проблему", reply_markup=types.ReplyKeyboardRemove())
+    
+
+
+
+
+
+
+
 bot.polling(none_stop=True, interval=0)
