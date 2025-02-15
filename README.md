@@ -1,5 +1,5 @@
 CRUD:
-#d
+
 🔹 Backend: python
 🔹 Frontend: кмд строка(cmd,PowerShell)
 🔹 Database: - archlinux(MySQL)
